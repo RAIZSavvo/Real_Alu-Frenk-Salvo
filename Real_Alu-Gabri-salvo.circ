@@ -62,6 +62,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(420,180)" to="(560,180)"/>
     <wire from="(190,160)" to="(370,160)"/>
     <wire from="(190,200)" to="(370,200)"/>
+    <comp lib="0" loc="(190,200)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
     <comp lib="1" loc="(420,180)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="inputs" val="2"/>
@@ -77,10 +82,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="8"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(190,200)" name="Pin">
+  </circuit>
+  <circuit name="NOT in_B">
+    <a name="circuit" val="NOT in_B"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="41" stroke="#000000" stroke-width="2" width="90" x="50" y="60"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="93" y="85">NOT_inB</text>
+      <circ-port height="8" pin="150,160" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="280,160" width="10" x="135" y="75"/>
+      <circ-anchor facing="east" height="6" width="6" x="117" y="87"/>
+    </appear>
+    <wire from="(220,160)" to="(280,160)"/>
+    <wire from="(150,160)" to="(190,160)"/>
+    <comp lib="1" loc="(220,160)" name="NOT Gate">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(150,160)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(280,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="NOT_B"/>
+      <a name="labelloc" val="east"/>
     </comp>
   </circuit>
 </project>
