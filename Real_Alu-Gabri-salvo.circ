@@ -888,4 +888,34 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
+  <circuit name="NOT in_B">
+    <a name="circuit" val="NOT in_B"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="81" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="75">NOT</text>
+      <circ-port height="8" pin="200,180" width="8" x="46" y="66"/>
+      <circ-port height="10" pin="370,180" width="10" x="125" y="65"/>
+      <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
+    </appear>
+    <wire from="(290,180)" to="(370,180)"/>
+    <wire from="(200,180)" to="(260,180)"/>
+    <comp lib="0" loc="(200,180)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(370,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="NOT B"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(290,180)" name="NOT Gate">
+      <a name="width" val="8"/>
+    </comp>
+  </circuit>
 </project>
