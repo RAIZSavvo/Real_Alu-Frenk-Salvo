@@ -1294,4 +1294,69 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit7" val="1"/>
     </comp>
   </circuit>
+  <circuit name="LSR">
+    <a name="circuit" val="LSR"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="120" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="14" text-anchor="middle" x="107" y="76">LSR</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="74">B</text>
+      <circ-port height="8" pin="170,160" width="8" x="46" y="66"/>
+      <circ-port height="10" pin="420,160" width="10" x="165" y="65"/>
+      <circ-port height="10" pin="240,120" width="10" x="75" y="45"/>
+      <circ-anchor facing="east" height="6" width="6" x="137" y="77"/>
+    </appear>
+    <wire from="(210,190)" to="(240,190)"/>
+    <wire from="(380,160)" to="(380,180)"/>
+    <wire from="(350,190)" to="(360,190)"/>
+    <wire from="(240,120)" to="(240,190)"/>
+    <wire from="(190,160)" to="(190,180)"/>
+    <wire from="(350,140)" to="(350,190)"/>
+    <wire from="(210,200)" to="(360,200)"/>
+    <wire from="(380,160)" to="(420,160)"/>
+    <wire from="(170,160)" to="(190,160)"/>
+    <comp lib="0" loc="(240,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(190,180)" name="Splitter">
+      <a name="incoming" val="8"/>
+      <a name="appear" val="right"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+    </comp>
+    <comp lib="0" loc="(170,160)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(350,140)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(420,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(380,180)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="incoming" val="8"/>
+      <a name="bit0" val="1"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="1"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="0"/>
+    </comp>
+  </circuit>
 </project>
