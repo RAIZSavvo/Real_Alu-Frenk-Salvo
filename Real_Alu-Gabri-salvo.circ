@@ -1160,6 +1160,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
+      <rect fill="none" height="61" stroke="#000000" stroke-width="2" width="180" x="50" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="137" y="83">Decrementatore</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="85">A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="215" y="86">A-1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="195" y="65">c-in</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="105">c-out</text>
+      <circ-port height="8" pin="280,110" width="8" x="46" y="76"/>
+      <circ-port height="10" pin="510,130" width="10" x="225" y="75"/>
+      <circ-port height="8" pin="400,70" width="8" x="186" y="46"/>
+      <circ-port height="10" pin="400,220" width="10" x="65" y="105"/>
+      <circ-anchor facing="east" height="6" width="6" x="207" y="97"/>
+    </appear>
     <wire from="(450,130)" to="(510,130)"/>
     <wire from="(160,220)" to="(220,220)"/>
     <wire from="(210,180)" to="(210,190)"/>
