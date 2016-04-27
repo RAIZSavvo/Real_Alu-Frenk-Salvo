@@ -70,14 +70,26 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="59" y="64">A</text>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="103">B</text>
       <text font-family="SansSerif" font-size="16" text-anchor="middle" x="99" y="85">AND</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="137" y="104">Z</text>
       <circ-port height="8" pin="190,160" width="8" x="46" y="56"/>
       <circ-port height="8" pin="190,200" width="8" x="46" y="96"/>
       <circ-port height="10" pin="560,180" width="10" x="145" y="75"/>
+      <circ-port height="10" pin="620,230" width="10" x="145" y="95"/>
       <circ-anchor facing="east" height="6" width="6" x="97" y="87"/>
     </appear>
-    <wire from="(420,180)" to="(560,180)"/>
+    <wire from="(550,230)" to="(620,230)"/>
+    <wire from="(450,180)" to="(450,230)"/>
+    <wire from="(420,180)" to="(450,180)"/>
+    <wire from="(450,180)" to="(560,180)"/>
+    <wire from="(450,230)" to="(470,230)"/>
     <wire from="(190,160)" to="(370,160)"/>
     <wire from="(190,200)" to="(370,200)"/>
+    <comp loc="(530,250)" name="FLAG Z"/>
+    <comp lib="0" loc="(620,230)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="1" loc="(420,180)" name="AND Gate">
       <a name="width" val="8"/>
       <a name="inputs" val="2"/>
@@ -108,18 +120,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <path d="M61,51 Q65,61 69,51" fill="none" stroke="#808080" stroke-width="2"/>
       <rect fill="none" height="61" stroke="#000000" stroke-width="2" width="110" x="50" y="50"/>
       <text font-family="SansSerif" font-size="18" text-anchor="middle" x="104" y="87">OR</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="149" y="103">Z</text>
       <circ-port height="8" pin="190,110" width="8" x="46" y="56"/>
       <circ-port height="8" pin="190,190" width="8" x="46" y="96"/>
       <circ-port height="10" pin="440,150" width="10" x="155" y="75"/>
+      <circ-port height="10" pin="510,210" width="10" x="155" y="95"/>
       <circ-anchor facing="east" height="6" width="6" x="117" y="97"/>
     </appear>
     <wire from="(190,110)" to="(220,110)"/>
     <wire from="(190,190)" to="(220,190)"/>
+    <wire from="(480,210)" to="(510,210)"/>
     <wire from="(220,110)" to="(220,130)"/>
     <wire from="(220,170)" to="(220,190)"/>
+    <wire from="(370,210)" to="(400,210)"/>
+    <wire from="(340,150)" to="(370,150)"/>
     <wire from="(220,130)" to="(290,130)"/>
     <wire from="(220,170)" to="(290,170)"/>
-    <wire from="(340,150)" to="(440,150)"/>
+    <wire from="(370,150)" to="(370,210)"/>
+    <wire from="(370,150)" to="(440,150)"/>
     <comp lib="0" loc="(440,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -130,10 +148,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="8"/>
       <a name="inputs" val="2"/>
     </comp>
+    <comp loc="(460,230)" name="FLAG Z"/>
     <comp lib="0" loc="(190,110)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(510,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(190,190)" name="Pin">
       <a name="width" val="8"/>
@@ -897,19 +921,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="81" x="50" y="50"/>
+      <rect fill="none" height="50" stroke="#000000" stroke-width="2" width="81" x="50" y="50"/>
       <text font-family="SansSerif" font-size="12" text-anchor="middle" x="88" y="75">NOT</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="112" y="93">Z</text>
       <circ-port height="8" pin="200,180" width="8" x="46" y="66"/>
       <circ-port height="10" pin="370,180" width="10" x="125" y="65"/>
+      <circ-port height="10" pin="500,240" width="10" x="125" y="85"/>
       <circ-anchor facing="east" height="6" width="6" x="107" y="77"/>
     </appear>
-    <wire from="(290,180)" to="(370,180)"/>
     <wire from="(200,180)" to="(260,180)"/>
+    <wire from="(340,180)" to="(370,180)"/>
+    <wire from="(340,180)" to="(340,240)"/>
+    <wire from="(290,180)" to="(340,180)"/>
+    <wire from="(340,240)" to="(380,240)"/>
+    <wire from="(460,240)" to="(500,240)"/>
+    <comp lib="0" loc="(500,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(200,180)" name="Pin">
       <a name="width" val="8"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
     </comp>
+    <comp loc="(440,260)" name="FLAG Z"/>
     <comp lib="1" loc="(290,180)" name="NOT Gate">
       <a name="width" val="8"/>
     </comp>
